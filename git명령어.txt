@@ -1,0 +1,41 @@
+git init - 버전관리를 시작하겠다.
+
+git status - 버전 관리하고 있는 파일들의 상태를 볼수있다.
+빨간색으로 뜬다면 add를 실행
+
+git add . - 스테이지에 올린다! (띄어쓰기 후 점(.) 붙이기)
+add 한 후에 다시 status를 실행
+
+git status - 초록색으로 떴다면 준비 끝
+
+git commit - m "메세지" - 깃에 어떤 내용을 가지고 커밋되었는지 메모를 남긴다. 
+
+git log - 어떤 로그가 있는지 확인
+
+master 브랜치 - 핵심 브랜치이다. (최대한 보수적으로 사용해야한다)
+
+git branch - 브랜치 목록을 볼 수 있다,
+
+git branch (브랜치 이름) - 해당 브랜치를 생성한다.
+
+git checkout (브랜치이름) - 해당 브랜치로 이동한다
+
+git branch -d (브랜치이름) - 해당 브랜치를 삭제한다. (현재 사용되고있는 브랜치는 삭제할 수 없다.)
+
+git checkout -b (브랜치이름) - 해당 브랜치를 새로 생성하면서 바로 이동한다.
+
+git merge (브랜치이름) - 기존브랜치와 해당브랜치를 병합한다
+
+git reset --hard HEAD~   - 바로 직전 버전으로 되돌리기 (현재 버전은 없어진다)
+
+git reset --hard ORIG_HEAD    - 한번은 복구가 가능하다. 지웠던 버전을 되살릴수있다. 
+
+git reset --hard HEAD~(숫자)   - 숫자의 크기만큼 전 버전으로 되돌아간다.
+
+git reset --hard (커밋아이디) - 아이디로 지정해 원하는 버전으로도 되돌아갈수있다.
+
+git remote add origin (깃헙레포지저장소주소) - 깃헙레포지에 연결시킨다.
+
+git push origin (브랜치이름) - 해당 브랜치 업로드하기!
+
+git push origin --all     - 브랜치 전부 업로드 하기!
